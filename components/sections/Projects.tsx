@@ -32,7 +32,7 @@ const projects = [
     domain: 'app.letrocfute.com',
     title: 'Le Troc Futé — App',
     description:
-      "CRM d'automatisation pour vendeurs Vinted : création d'annonces assistée par IA, républication et modification de prix en masse, réponses et négociation automatiques aux acheteurs, messages aux favoris — avec abonnements et facturation Stripe.",
+      "Application d'automatisation pour vendeurs Vinted : création d'annonces assistée par IA, républication et modification de prix en masse, réponses et négociation automatiques aux acheteurs, messages aux favoris — avec abonnements et facturation Stripe.",
     tags: ['Next.js', 'Symfony', 'MySQL', 'Firebase'],
     role: 'Full Stack',
     link: 'https://app.letrocfute.com/',
@@ -66,7 +66,7 @@ const projects = [
     domain: 'kafmaron.re',
     title: 'Kafmaron',
     description:
-      "Vitrine et commande en ligne pour un restaurant à La Réunion : menu dynamique, panier et paiement sécurisé par carte bancaire.",
+      `Site vitrine et plateforme e-commerce pour l'artiste réunionnais Kafmaron : présentation de son album "Lankraz", téléchargement de musique (MP3/livret de paroles), calendrier des concerts, galerie photos/vidéos et localisation des points de vente physiques à La Réunion`,
     tags: ['jQuery', 'Yii (PHP)', 'MongoDB'],
     role: 'Full Stack',
     link: 'https://www.kafmaron.re/',
