@@ -65,9 +65,9 @@ export default function Hero() {
             variants={item}
             className="mt-7 text-lg md:text-xl leading-relaxed text-[var(--text-muted)] max-w-[600px]"
           >
-            Ingénieur & Développeur Full Stack — 7 ans d&apos;expérience. Du Symfony legacy au
-            Next.js moderne, du plugin navigateur à l&apos;application mobile. Basé à Fianarantsoa,
-            je travaille à distance avec des clients européens.
+            Ingénieur & Développeur Full Stack — 7 ans d&apos;expérience. Je conçois et développe des produits digitaux de bout en bout, en combinant technologies web modernes, applications mobiles et extensions navigateur. Basé à Fianarantsoa, et travaille à distance avec des
+            clients européens.
+
           </motion.p>
 
           {/* CTA */}
