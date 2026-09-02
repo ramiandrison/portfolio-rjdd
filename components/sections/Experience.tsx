@@ -16,7 +16,7 @@ const experiences = [
     period: 'Fév. 2024 — Présent',
     duration: '2 ans 7 mois',
     description:
-      'Plateformes SaaS avec intégration Stripe Connect, applications React Native et extensions navigateur Firefox/Chrome.',
+      'Plateformes SaaS avec intégration Stripe,Stripe Connect, NextJS, extensions navigateur Firefox/Chrome, etc . . .',
     current: true,
   },
   {
@@ -25,7 +25,7 @@ const experiences = [
     period: 'Janv. 2021 — Fév. 2024',
     duration: '3 ans 2 mois',
     description:
-      'Sites institutionnels pour le secteur santé et universitaire français. Plateformes métier sur mesure avec Symfony.',
+      'Plateformes métier sur mesure : CMS, générateur de formulaires, plateforme d\'appel à projets et outils de sondage.',
     current: false,
   },
 ];

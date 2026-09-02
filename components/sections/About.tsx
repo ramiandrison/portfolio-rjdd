@@ -13,7 +13,6 @@ const fadeUp: Variants = {
 const stats = [
   { value: '7+', label: 'Années' },
   { value: '10+', label: 'Projets' },
-  { value: '2', label: 'Entreprises' },
 ];
 
 export default function About() {
@@ -73,7 +72,7 @@ export default function About() {
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 mt-12">
+            <div className="grid grid-cols-2 gap-4 mt-12 max-w-[420px]">
               {stats.map((s) => (
                 <div key={s.label} className="glass-card p-6 text-center">
                   <div className="font-display text-3xl md:text-4xl font-bold text-gradient">
