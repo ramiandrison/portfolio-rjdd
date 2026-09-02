@@ -1,0 +1,96 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+
+const navItems = [
+  { href: '#about', label: 'À propos' },
+  { href: '#experience', label: 'Parcours' },
+  { href: '#formation', label: 'Formation' },
+  { href: '#skills', label: 'Stack' },
+  { href: '#projects', label: 'Projets' },
+  { href: '#contact', label: 'Contact' },
+];
+
+export default function Navigation() {
+  const [activeSection, setActiveSection] = useState('');
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('section[id]');
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.25,
+        rootMargin: '-20% 0px -50% 0px',
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <nav
+      className={`fixed top-0 left-0 right-0 z-[100] px-8 py-5 flex justify-between items-center transition-all duration-500 ${
+        scrolled
+          ? 'bg-[rgba(6,6,6,0.8)] backdrop-blur-[20px] border-b border-[var(--line)]'
+          : 'bg-transparent border-b border-transparent'
+      }`}
+    >
+      {/* Brand */}
+      <Link
+        href="#top"
+        className="flex items-center gap-2.5 text-lg font-semibold text-[var(--text)] tracking-[0.02em] transition-transform duration-300 hover:scale-105"
+      >
+        <span className="w-1.5 h-1.5 bg-[var(--accent)] rounded-full animate-pulse-slow" />
+        <span>JDR</span>
+      </Link>
+
+      {/* Nav Items */}
+      <div className="hidden lg:flex gap-10">
+        {navItems.map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            className={`text-xs tracking-[0.2em] uppercase font-medium transition-all duration-[400ms] relative group ${
+              activeSection === item.href.slice(1)
+                ? 'text-[var(--accent)]'
+                : 'text-[var(--text-muted)] hover:text-[var(--accent)]'
+            }`}
+          >
+            {item.label}
+            <span
+              className={`absolute -bottom-1 left-0 h-px bg-[var(--accent)] transition-all duration-300 ${
+                activeSection === item.href.slice(1) ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}
+            />
+          </Link>
+        ))}
+      </div>
+
+      {/* Status */}
+      <div className="flex items-center gap-2 text-[var(--text-muted)] text-[11px] tracking-[0.2em] uppercase">
+        <span className="w-1.5 h-1.5 bg-[var(--accent)] rounded-full animate-pulse-slow" />
+        <span>GMT+3</span>
+      </div>
+    </nav>
+  );
+}
