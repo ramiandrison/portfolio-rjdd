@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import SectionHeading from '@/components/ui/SectionHeading';
 import ProjectCard from '@/components/sections/ProjectCard';
@@ -97,7 +96,7 @@ const projects = [
   {
     num: '08',
     domain: 'avotraina.vercel.app',
-    title: 'Avot’raina — Centre Médical',
+    title: 'Avotr\'aina — Centre Médical',
     description:
       "Logiciel de gestion complète pour centre médical : patients, rendez-vous, consultations, pharmacie, stocks et comptabilité — avec dashboard analytique et PWA installable.",
     tags: ['Firebase', 'Next.js', 'Express.js'],
