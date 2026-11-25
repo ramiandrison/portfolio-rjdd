@@ -13,7 +13,7 @@ const skillCategories = [
   {
     name: 'Langages',
     skills: [
-      { name: 'JavaScript', context: 'Front, back, mobile, extensions' },
+      { name: 'JavaScript', context: 'Front, back, extensions' },
       { name: 'TypeScript', context: 'Par défaut sur tout nouveau projet JS' },
       { name: 'PHP', context: 'Symfony — sites institutionnels' },
       { name: 'Java', context: 'POO, applications robustes côté serveur' },
@@ -27,7 +27,7 @@ const skillCategories = [
       { name: 'React.js / Next.js', context: 'Frontend principal — SSR / SSG' },
       { name: 'Node.js / NestJS', context: 'APIs REST structurées, typage strict' },
       { name: 'Symfony', context: 'PHP enterprise — Open Atlas' },
-      { name: 'React Native / Expo', context: 'Applications mobiles cross-platform' },
+      //{ name: 'React Native / Expo', context: 'Applications mobiles cross-platform' },
       { name: 'Redux.js / Zustand', context: 'State management — applications complexes et modernes' },
       { name: 'Tailwind CSS', context: 'Styling utility-first — v3 & v4' },
       { name: 'Framer Motion', context: 'Animations React — transitions, gestes' },
@@ -37,7 +37,7 @@ const skillCategories = [
     name: 'Bases de données',
     skills: [
       { name: 'PostgreSQL', context: 'SQL par défaut — données strictes' },
-      { name: 'MySQL', context: 'Projets legacy Symfony' },
+      { name: 'MySQL', context: 'Projets Symfony' },
       { name: 'MongoDB', context: 'Documents — schémas flexibles' },
       { name: 'Firebase', context: 'Prototypes, real-time, authentification' },
       { name: 'Supabase', context: 'BaaS PostgreSQL — auth, real-time, storage' },

@@ -11,7 +11,7 @@ const fadeUp: Variants = {
 };
 
 const stats = [
-  { value: '7+', label: 'Années' },
+  { value: '5+', label: 'Années' },
   { value: '10+', label: 'Projets' },
 ];
 
@@ -67,7 +67,7 @@ export default function About() {
               9h, qui lit cet écran à 23h.
             </p>
             <p className="mt-6 text-base md:text-lg leading-relaxed text-[var(--text-muted)]">
-              Sept ans de pratique — trois ans chez Open Atlas sur du Symfony institutionnel, puis
+              Plus de 5 ans de pratique — trois ans chez Open Atlas, puis
               deux ans et demi chez MadaIT-Lab sur du React, NestJS et Stripe Connect.
             </p>
 

@@ -15,7 +15,7 @@ const item: Variants = {
 };
 
 const stats = [
-  { value: '7+', label: "années d'expérience" },
+  { value: '5+', label: "années d'expérience" },
   { value: '10+', label: 'projets livrés' },
   { value: '20+', label: 'technologies maîtrisées' },
 ];
@@ -65,7 +65,7 @@ export default function Hero() {
             variants={item}
             className="mt-7 text-lg md:text-xl leading-relaxed text-[var(--text-muted)] max-w-[600px]"
           >
-            Ingénieur & Développeur Full Stack — 7 ans d&apos;expérience. Je conçois et développe des produits digitaux de bout en bout, en combinant technologies web modernes, applications mobiles et extensions navigateur. Basé à Fianarantsoa, et travaille à distance avec des
+            Ingénieur & Développeur Full Stack — Plus de 5 ans d&apos;expérience. Je conçois et développe des produits digitaux de bout en bout, en combinant technologies web modernes et extensions navigateur. Basé à Fianarantsoa, et travaille à distance avec des
             clients européens.
 
           </motion.p>

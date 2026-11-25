@@ -21,7 +21,7 @@ export const dynamic = 'force-dynamic';
 export const metadata: Metadata = {
   title: 'Jean Dieu Donné RAMIANDRISON — Ingénieur & Full Stack',
   description:
-    "Portfolio de Jean Dieu Donné RAMIANDRISON, Ingénieur et Développeur Full Stack. 7 ans d'expérience en développement web, du Symfony legacy au Next.js moderne.",
+    "Portfolio de Jean Dieu Donné RAMIANDRISON, Ingénieur et Développeur Full Stack. Plus 5 ans d'expérience en développement web.",
   keywords: [
     'développeur full stack',
     'ingénieur logiciel',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Jean Dieu Donné RAMIANDRISON' }],
   openGraph: {
     title: 'Jean Dieu Donné RAMIANDRISON — Ingénieur & Full Stack',
-    description: "Portfolio de développeur Full Stack avec 7 ans d'expérience",
+    description: "Portfolio de développeur Full Stack avec plus de 5 ans d'expérience",
     type: 'website',
     locale: 'fr_FR',
   },

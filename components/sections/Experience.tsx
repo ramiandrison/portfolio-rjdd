@@ -39,7 +39,7 @@ export default function Experience() {
           eyebrow="Parcours"
           title={
             <>
-              Sept ans, deux maisons,{' '}
+              Plus de 5 ans, deux maisons,{' '}
               <span className="text-gradient font-light">mille contextes.</span>
             </>
           }
